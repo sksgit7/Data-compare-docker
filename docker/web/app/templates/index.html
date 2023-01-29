@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <center>
+    <h1>DB Table Compare</h1>
+    <form action = "{{ url_for('index')}}", method = 'post'>
+      <label for="host">Host:</label><br>
+      <input type="text" id="host" name="host" value="{{ mydict.get('Host') }}" required><br>
+      <label for="user">Username:</label><br>
+      <input type="text" id="user" name="user" required><br><br>
+      <label for="passwd">Password:</label><br>
+      <input type="text" id="passwd" name="passwd" required><br>
+      <label for="db">Database:</label><br>
+      <input type="text" id="db" name="db" value="{{ mydict.get('DB') }}" required><br><br>
+      <label for="src_query">SRC SQL query:</label><br>
+      <textarea type="text" id="src_query" name="src_query" cols=100 required>{{ mydict.get('SRC_query') }}</textarea><br>
+      <label for="tgt_query">TGT SQL query:</label><br>
+      <textarea type="text" id="tgt_query" name="tgt_query" cols=100 required>{{ mydict.get('TGT_query') }}</textarea><br><br>
+
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+
+    {% if msg %}
+    <h5>
+      <br>{{ msg }}<br>
+      Num match - {{ mydict['Match'] }}<br>
+      SRC diff TGT - {{ mydict['SRC_diff_TGT'] }}<br>
+      TGT diff SRC - {{ mydict['TGT_diff_SRC'] }}<br>
+      Time taken - {{ mydict['Duration'] }} seconds (except logging)
+    </h5>
+    {% endif %}
+  </center>
+
+  </body>
+
+</html>
