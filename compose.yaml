@@ -1,0 +1,41 @@
+version: '3'
+services:
+  db-compare-app:
+    build: ./docker/web
+    image: db-compare:4.0
+    ports:
+      - 3000:3000
+    volumes:
+      - H:\DevOps\docker-techworld\db-compare\tgt-docker:/app/tgt
+  mongodb:
+    image: mongo
+    ports:
+      - 27018:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 15s
+      timeout: 5s
+      retries: 4
+      start_period: 10s
+
+  mongo-express:
+    build: ./docker/db
+    image: mongo-express-db-compare:1.0
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    restart: always # fixes MongoNetworkError when mongodb is not ready when mongo-express starts
+    ports:
+      - 8080:8081
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
+      - ME_CONFIG_MONGODB_SERVER=mongodb
+volumes:
+  mongo-data:
+    driver: local
