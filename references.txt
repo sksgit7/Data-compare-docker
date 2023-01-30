@@ -1,0 +1,95 @@
+YouTube
+https://www.youtube.com/watch?v=0eMU23VyzR8
+https://www.youtube.com/watch?v=3c-iBn73dDE
+
+Docker python not connect to mysql on local
+https://stackoverflow.com/questions/54047890/how-to-connect-to-a-mysql-database-on-localhost-from-a-python-script-in-a-docker
+https://stackoverflow.com/questions/19101243/error-1130-hy000-host-is-not-allowed-to-connect-to-this-mysql-server
+
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+Ping command not found in Docker container CLI
+https://stackoverflow.com/questions/56211124/ping-wont-install-inside-a-docker-container
+
+-----------
+Python print in Docker logs - print(value, flush=True)
+https://stackoverflow.com/questions/29663459/python-app-does-not-print-anything-when-running-detached-in-docker
+https://stackoverflow.com/questions/51362213/docker-compose-not-printing-stdout-in-python-app
+https://stackoverflow.com/questions/29663459/python-app-does-not-print-anything-when-running-detached-in-docker
+
+Pandas - https://hackersandslackers.com/compare-rows-pandas-dataframes/
+
+MySQL
+https://stackoverflow.com/questions/5010042/mysql-get-column-name-or-alias-from-query
+https://stackoverflow.com/questions/23786674/python-mysqldb-how-to-get-columns-name-without-executing-select-in-a-big-tab
+https://stackoverflow.com/questions/8537037/cast-decimal-to-int
+
+Error while installing numpy during build (used py 3.7, non alpine version)
+https://stackoverflow.com/questions/64407870/why-do-i-get-a-runtimeerror-broken-toolchain-cannot-link-a-simple-c-program
+https://stackoverflow.com/questions/22388519/problems-with-pip-install-numpy-runtimeerror-broken-toolchain-cannot-link-a
+
+HTML
+https://www.w3schools.com/tags/tag_textarea.asp
+
+Docker compose issues
+https://forums.docker.com/t/docker-compose-he-image-for-the-service-youre-trying-to-recreate-has-been-removed-if-you-continue-volume-data-could-be-lost-consider-backing-up-your-data-before-continuing/79741
+
+Volume mounting
+https://matthewfeickert.github.io/intro-to-docker/04-file-io/index.html
+https://docs.docker.com/compose/compose-file/compose-file-v3/
+
+Copying files from-to containers
+https://www.geeksforgeeks.org/copying-files-to-and-from-docker-containers/
+
+-------------------------
+Py-Mongo
+https://www.w3schools.com/python/python_mongodb_insert.asp
+https://www.geeksforgeeks.org/mongodb-and-python/
+https://pymongo.readthedocs.io/en/stable/examples/authentication.html
+https://stackoverflow.com/questions/72958590/adding-via-python-to-docker-mongodb
+https://stackoverflow.com/questions/68382990/pymongo-insert-one-is-running-but-isnt-adding-anything-to-mongodb-database
+https://dba.stackexchange.com/questions/188441/how-to-views-all-documents-in-a-particular-collection-of-database-in-mongodb-thr
+
+Docker taking long to start - https://stackoverflow.com/questions/43041331/docker-forever-in-docker-is-starting-at-windows-task
+	- Changed to windows containers but no result. Restarted docker again (rught ckick, quit, re-open). After restart just changed back to linux containers and it opened after few minutes.
+
+Python
+https://www.geeksforgeeks.org/get-current-timestamp-using-python/
+
+Docker-python-mongo
+https://kb.objectrocket.com/mongo-db/use-docker-and-python-for-a-mongodb-application-1046
+https://forums.docker.com/t/how-mongodb-work-in-docker-how-to-connect-with-mongodb/44763/5
+
+Docker health check and depend on (one container wait on other)-
+https://stackoverflow.com/questions/31746182/docker-compose-wait-for-container-x-before-starting-y
+https://github.com/compose-spec/compose-spec/blob/master/spec.md#healthcheck
+https://stackoverflow.com/questions/74436575/mongodb-and-mongo-express-not-connecting-with-docker-compose
+
+Install package using Dockerfile
+https://stackoverflow.com/questions/47903079/how-to-install-packages-from-docker-compose
+https://stackoverflow.com/questions/45142855/bin-sh-apt-get-not-found
+
+Multiple Dockerfile for different images (Keep Dockerfiles in separate folder and keep app code along with those)
+https://stackoverflow.com/questions/27409761/docker-multiple-dockerfiles-in-project
+https://stackoverflow.com/questions/24537340/docker-adding-a-file-from-a-parent-directory
+https://stackoverflow.com/questions/71838329/docker-failed-to-compute-cache-key
+
+Define name of image built using Dockerfile
+https://stackoverflow.com/questions/32230577/how-do-i-define-the-name-of-image-built-with-docker-compose
+
+Multiline command on cmd - https://stackoverflow.com/questions/605686/how-to-write-a-multiline-command
+
+Node warning - https://www.mongodb.com/community/forums/t/warning-accessing-non-existent-property-count-of-module-exports-inside-circular-dependency/3183/5
+
+Node errors - https://stackoverflow.com/questions/34593434/auth-failed-code-18-when-connecting-to-mongolab-database
+https://bobcares.com/blog/mongodb-error-auth-failed/
+https://mongodb.github.io/node-mongodb-native/api-generated/mongoclient.html
+https://www.mongodb.com/docs/manual/reference/connection-string/#std-label-connections-standard-connection-string-format
+
+Docker compose yaml error - https://stackoverflow.com/questions/56733841/service-image-must-be-a-mapping-not-a-string
+
+Docker volumes location - https://stackoverflow.com/questions/43181654/locating-data-volumes-in-docker-desktop-windows (not found)
+
+New mongo shell (mongosh) - https://www.mongodb.com/docs/mongodb-shell/
+Commands - https://dev.to/arantespp/mongodb-shell-commands-running-on-docker-101-1l73
+https://stackoverflow.com/questions/56534227/mongodb-docker-container-doesnt-show-databases (use mongosh rather than mongo)
